@@ -4,111 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Детская библиотека</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-        }
-        body {
-            background: linear-gradient(135deg, #f0f9ff 0%, #e0e7ff 100%);
-            color: #333;
-            line-height: 1.6;
-            padding: 20px;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        header {
-            text-align: center;
-            padding: 40px 0;
-        }
-        h1 {
-            font-size: 2.5rem;
-            color: #312e81;
-            margin-bottom: 15px;
-        }
-        .subtitle {
-            font-size: 1.2rem;
-            color: #4f46e5;
-        }
-        section {
-            margin-bottom: 40px;
-            background: white;
-            border-radius: 10px;
-            padding: 25px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        h2 {
-            font-size: 1.8rem;
-            color: #3730a3;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #a5b4fc;
-        }
-        .book-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .book-card {
-            background: white;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-        }
-        .book-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-        .book-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #312e81;
-            margin-bottom: 5px;
-        }
-        .book-author {
-            color: #4f46e5;
-            margin-bottom: 15px;
-            font-size: 0.9rem;
-        }
-        .read-btn {
-            display: inline-block;
-            background: #4f46e5;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: background 0.3s;
-        }
-        .read-btn:hover {
-            background: #4338ca;
-        }
-        footer {
-            text-align: center;
-            padding: 30px 0;
-            color: #4f46e5;
-            margin-top: 40px;
-        }
-        .source-link {
-            color: #4338ca;
-            text-decoration: underline;
-            margin: 0 5px;
-        }
-        @media (max-width: 768px) {
-            .book-grid {
-                grid-template-columns: 1fr;
-            }
-            h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -131,6 +27,7 @@
                     <p class="book-author">В. Гаршин</p>
                     <a href="https://nukadeti.ru/skazki/lyagushka_puteshestvennica" class="read-btn" target="_blank">Читать</a>
                 </div>
+                
                 
                 <div class="book-card">
                     <h3 class="book-title">Сказка о жабе и розе</h3>
@@ -171,7 +68,7 @@
                 <div class="book-card">
                     <h3 class="book-title">Гостья из будущего</h3>
                     <p class="book-author">К. Булычев</p>
-                    <a href="https://nukadeti.ru/rasskazy/sto-let-tomu-vpered-gostya-iz-budushhego "class= read-btn" target="_blank">Читать</a>
+                    <a href="https://nukadeti.ru/rasskazy/sto-let-tomu-vpered-gostya-iz-budushhego "class= read-btn target="_blank">Читать</a>
                 </div>
             </div>
         </section>
@@ -237,6 +134,137 @@
                     <h3 class="book-title">Дикие лебеди</h3>
                     <p class="book-author">Г. Андерсен</p>
                     <a href="https://nukadeti.ru/skazki/andersen_dikie_lebedi" class="read-btn" target="_blank">Читать</a>
+                </div>
+                 
+        </section>
+        <section>
+            <h2>Обязательная литература</h2>
+            <div class="book-grid">
+                <div class="book-card">
+                    <h3 class="book-title">Волшебное кольцо</h3>
+                    <a href="https://deti-online.com/skazki/russkie-narodnye-skazki/volshebnoe-kolco/" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Царевна Несмеяна</h3>
+                    <a href="https://deti-online.com/skazki/russkie-narodnye-skazki/carevna-nesmeyana/" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Летучий корабль</h3>
+                    <a href="https://nukadeti.ru/skazki/letuchij_korabl" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Детки в клетке</h3>
+                    <p class="book-author">С. Маршак</p>
+                    <a href="https://deti-online.com/skazki/skazki-marshaka/detki-v-kletke" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Марья Моревна</h3>
+                    <a href="https://nukadeti.ru/skazki/marya_morevna" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Иван-царевич и серый волк</h3>
+                    <a href="https://nukadeti.ru/skazki/ivan_carevich_i_seryj_volk" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Финист - Ясный сокол</h3>
+                    <a href="https://nukadeti.ru/skazki/finist_yasnyj_sokol" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Солнце, Месяц и Ворон Воронович</h3>
+                    <a href="https://deti-online.com/skazki/russkie-narodnye-skazki/solnce-mesyac-i-voron-voronovich/" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Сказка о молодильных яблоках</h3>
+                    <a href="https://nukadeti.ru/skazki/o_molodilnykh_yablokakh_i_zhivoj_vode" class="read-btn" target="_blank">Читать</a>
+                </div>
+            
+
+        
+            
+                <div class="book-card">
+                    <h3 class="book-title">Басни</h3>
+                    <p class="book-author">И. Крылов</p>
+                    <a href="https://deti-online.com/basni/basni-krylova/" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Стихи</h3>
+                    <p class="book-author">С. Маршак</p>
+                    <a href="https://deti-online.com/stihi/stihi-marshaka/" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Стихи</h3>
+                    <p class="book-author">А. Барто</p>
+                    <a href="https://nukadeti.ru/stihi/agniya-barto" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Стихи</h3>
+                    <p class="book-author">С. Михалков</p>
+                    <a href="https://deti-online.com/stihi/stihi-mihalkova/" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Как медведь трубку нашел</h3>
+                    <p class="book-author">С. Михалков</p>
+                    <a href="https://mishka-knizhka.ru/stihi-dlya-detej/detskie-klassiki/stihi-mihalkova/kak-medved-trubku-nashel/?ysclid=mc0ur6qpua375126897" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Кладовая солнца</h3>
+                    <p class="book-author">М. Пришвин</p>
+                    <a href="https://nukadeti.ru/skazki/prishvin_kladovaya_solnca" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Серая Шейка</h3>
+                    <p class="book-author">Д. Мамин-Сибиряк</p>
+                    <a href="https://deti-online.com/skazki/skazki-mamina-sibirjaka/seraja-sheika/" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Веселая семейка</h3>
+                    <p class="book-author">Н. Носов</p>
+                    <a href="https://nukadeti.ru/skazki/nosov-veselaya-semejka-povest" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Рассказы о природе</h3>
+                    <p class="book-author">В. Бианки</p>
+                    <a href="https://deti-online.com/skazki/rasskazy-bianki/" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Как слон спас хозяина</h3>
+                    <p class="book-author">Б. Житков</p>
+                    <a href="https://deti-online.com/skazki/rasskazy-zhitkova/kak-slon-spas-hozyaina-ot-tigra/" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Горячий камень</h3>
+                    <p class="book-author">А. Гайдар</p>
+                    <a href="https://deti-online.com/skazki/rasskazy-gaydara/goryachiy-kamen/" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Сказка о потерянном времени</h3>
+                    <p class="book-author">Е. Шварц</p>
+                    <a href="https://deti-online.com/skazki/evgeniy-shvarc/skazka-o-poteryannom-vremeni/" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Крокодил Гена и его друзья</h3>
+                    <p class="book-author">Э. Успенский</p>
+                    <a href="https://deti-online.com/audioskazki/uspenskiy-mp3/krokodil-gena-i-ego-druzya/" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Дядя Федор, пес и кот</h3>
+                    <p class="book-author">Э. Успенский</p>
+                    <a href="https://deti-online.com/audioskazki/uspenskiy-mp3/dyadya-fedor-pes-i-kot/" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Вредные советы</h3>
+                    <p class="book-author">Г. Остер</p>
+                    <a href="https://deti-online.com/audioskazki/sbornik-rasskazov/vrednye-sovety/" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Зарядка для хвоста</h3>
+                    <p class="book-author">Г. Остер</p>
+                    <a href="https://nukadeti.ru/rasskazy/zaryadka-dlya-khvosta" class="read-btn" target="_blank">Читать</a>
+                </div>
+                <div class="book-card">
+                    <h3 class="book-title">Денискины рассказы</h3>
+                    <p class="book-author">В. Драгунский</p>
+                    <a href="https://nukadeti.ru/skazki/deniskiny-rasskazy" class="read-btn" target="_blank">Читать</a>
                 </div>
             </div>
         </section>
